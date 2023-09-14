@@ -1,0 +1,29 @@
+Scanner scanner = new Scanner(System.in); //cria um novo objeto para poder se trabalhar com a classe Scanner, entrada de dados
+        
+        System.out.println("aqui exibe informações"); // println serve para exibir uma informação e quebrar linha ao final da exibição
+        
+        System.out.print("Por favor, informe seu nome:"); //print serve para exibir uma informação sem quebra de linha
+        
+        String nomeCompleto;//string armazna texto/tudo
+        int idade; //int armazena números inteiros
+        Float peso;//float armazena número com virgula
+        Float altura;
+        Float imc;
+        
+        // nextLine recebe todo tipo de dado, ele recebe tudo que o usuário digitar
+        System.out.println("por favor informe seu nome: ");
+        nomeCompleto = scanner.nextLine();
+        
+        System.out.println("por favor informe sua idade: ");
+        idade = scanner.nextInt();
+        
+        System.out.println("por favor informe seu peso: ");
+        peso = scanner.nextFloat();
+       
+        System.out.println("por favor informe sua altura: ");
+        altura = scanner.nextFloat();
+        
+        imc = peso/(altura*altura);//aqui feito o cálculo do imc e guardado o resultado na variável que se chama imc
+        System.out.println("Olá " + nomeCompleto +", seu imc é "+ imc ) ;
+    }
+}
